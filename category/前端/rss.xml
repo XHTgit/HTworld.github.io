@@ -9,7 +9,7 @@
         <lastBuildDate>Tue, 21 Mar 2023 23:44:58 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">https://xhtgit.github.io/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</guid>
-            <title>NodeJS-http模块</title>
+            <title>NodeJS之模块加载机制及npm指令详解</title>
             <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</link>
             <pubDate>Tue, 21 Mar 2023 23:44:58 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;模块化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#模块化&#34;&gt;#&lt;/a&gt; 模块化&lt;/h2&gt;
@@ -255,7 +255,7 @@ C:\node_modules\tools
         </item>
         <item>
             <guid isPermalink="true">https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</guid>
-            <title>NodeJS-http模块</title>
+            <title>NodeJS之fs</title>
             <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</link>
             <pubDate>Tue, 21 Mar 2023 23:44:11 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;nodejs简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs简介&#34;&gt;#&lt;/a&gt; NodeJs 简介&lt;/h2&gt;
@@ -335,7 +335,7 @@ C:\node_modules\tools
         </item>
         <item>
             <guid isPermalink="true">https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/</guid>
-            <title>NodeJS-http模块</title>
+            <title>NodeJS之http</title>
             <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/</link>
             <pubDate>Tue, 21 Mar 2023 14:03:09 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;http模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http模块&#34;&gt;#&lt;/a&gt; http 模块&lt;/h2&gt;
