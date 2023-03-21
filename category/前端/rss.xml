@@ -1,14 +1,18 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://xhtgit.github.io/HTworld.github.io</id>
-    <title>HT的小天地</title>
-    <link href="https://xhtgit.github.io/HTworld.github.io" />
-    <updated>2023-03-21T06:03:09.258Z</updated>
-    <entry>
-        <id>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</id>
-        <title>NodeJS-fs模块</title>
-        <link rel="alternate" href="https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/"/>
-        <content type="html">&lt;h2 id=&#34;http模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http模块&#34;&gt;#&lt;/a&gt; http 模块&lt;/h2&gt;
+<rss version="2.0">
+    <channel>
+        <title>HT的小天地 • Posts by &#34;前端&#34; category</title>
+        <link>https://xhtgit.github.io/HTworld.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Tue, 21 Mar 2023 14:03:09 +0800</pubDate>
+        <lastBuildDate>Tue, 21 Mar 2023 14:03:09 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</guid>
+            <title>NodeJS-fs模块</title>
+            <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</link>
+            <pubDate>Tue, 21 Mar 2023 14:03:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;http模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http模块&#34;&gt;#&lt;/a&gt; http 模块&lt;/h2&gt;
 &lt;p&gt;http 模块是 Node.js 官方提供的用来创建 web 服务器的模块&lt;/p&gt;
 &lt;p&gt;通过 http 模块提供的 http.createServer () 方法，就能方便的把一台普通的电脑，变成一台 Web 服务器，从而对外提供 Web 资源服务。&lt;br&gt;
 在 Node.js 中，不需要使用 IIS、Apache（针对 php） 等第三方 web 服务器软件（普通的电脑常常安装这些），而是基于 Node.js 提供的 http 模块，通过几行简单的代码，就能轻松的手写一个服务器软件，从而对外提供 web 服务&lt;/p&gt;
@@ -55,7 +59,7 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
 &lt;li&gt;使用 res.end () 把内容响应给客户端&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;const http = require(&amp;#x27;http&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;const server = http.createServer()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;server.on(&amp;#x27;request&amp;#x27;, (req, res) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 1. 获取请求的 url 地址&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  const url = req.url&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 2. 设置默认的响应内容为 404 Not found&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  let content = &amp;#x27;&amp;lt;h1&amp;gt;404 Not found!&amp;lt;/h1&amp;gt;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 3. 判断用户请求的是否为 / 或 /index.html 首页&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 4. 判断用户请求的是否为 /about.html 关于页面&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (url === &amp;#x27;/&amp;#x27; || url === &amp;#x27;/index.html&amp;#x27;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    content = &amp;#x27;&amp;lt;h1&amp;gt;首页&amp;lt;/h1&amp;gt;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125; else if (url === &amp;#x27;/about.html&amp;#x27;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    content = &amp;#x27;&amp;lt;h1&amp;gt;关于页面&amp;lt;/h1&amp;gt;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 5. 设置 Content-Type 响应头，防止中文乱码&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  res.setHeader(&amp;#x27;Content-Type&amp;#x27;, &amp;#x27;text/html; charset=utf-8&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 6. 使用 res.end() 把内容响应给客户端&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  res.end(content)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;server.listen(80, () =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  console.log(&amp;#x27;server running at http://127.0.0.1&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-        <updated>2023-03-21T06:03:09.258Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>
