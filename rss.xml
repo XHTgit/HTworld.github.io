@@ -12,11 +12,10 @@
             <title>NodeJS之模块加载机制及npm指令详解</title>
             <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</link>
             <pubDate>Tue, 21 Mar 2023 23:44:58 +0800</pubDate>
-            <description><![CDATA[ &lt;meta name=&#34;referrer&#34; content=&#34;no-referrer&#34; /&gt;
-## 模块化
-模块化：是指解决一个复杂问题时，自顶向下逐层把系统划分成若干模块的过程。对于整个系统来说，模块是可组合、分解和更换的单元
-编程领域中的模块化，就是遵守固定的规则，把一个大文件拆成独立并互相依赖的多个小模块。
-把代码进行模块化拆分的好处
+            <description><![CDATA[ &lt;h2 id=&#34;模块化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#模块化&#34;&gt;#&lt;/a&gt; 模块化&lt;/h2&gt;
+&lt;p&gt;模块化：是指解决一个复杂问题时，自顶向下逐层把系统划分成若干模块的过程。对于整个系统来说，模块是可组合、分解和更换的单元&lt;br&gt;
+编程领域中的模块化，就是遵守固定的规则，把一个大文件拆成独立并互相依赖的多个小模块。&lt;br&gt;
+把代码进行模块化拆分的好处&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;提高了代码的复用性&lt;/li&gt;
 &lt;li&gt;提高了代码的可维护性&lt;/li&gt;
@@ -259,8 +258,7 @@ C:\node_modules\tools
             <title>NodeJS之fs</title>
             <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</link>
             <pubDate>Tue, 21 Mar 2023 23:44:11 +0800</pubDate>
-            <description><![CDATA[ &lt;meta name=&#34;referrer&#34; content=&#34;no-referrer&#34; /&gt;
-&lt;h2 id=&#34;nodejs简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs简介&#34;&gt;#&lt;/a&gt; NodeJs 简介&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;nodejs简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs简介&#34;&gt;#&lt;/a&gt; NodeJs 简介&lt;/h2&gt;
 &lt;h4 id=&#34;什么是-nodejs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是-nodejs&#34;&gt;#&lt;/a&gt; 什么是 Node.js&lt;/h4&gt;
 &lt;p&gt;Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境&lt;/p&gt;
 &lt;h4 id=&#34;nodejs-中的-javascript-运行环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs-中的-javascript-运行环境&#34;&gt;#&lt;/a&gt; Node.js 中的 JavaScript 运行环境&lt;/h4&gt;
@@ -340,8 +338,7 @@ C:\node_modules\tools
             <title>NodeJS之http</title>
             <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/</link>
             <pubDate>Tue, 21 Mar 2023 14:03:09 +0800</pubDate>
-            <description><![CDATA[ &lt;meta name=&#34;referrer&#34; content=&#34;no-referrer&#34; /&gt;
-&lt;h2 id=&#34;http模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http模块&#34;&gt;#&lt;/a&gt; http 模块&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;http模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http模块&#34;&gt;#&lt;/a&gt; http 模块&lt;/h2&gt;
 &lt;p&gt;http 模块是 Node.js 官方提供的用来创建 web 服务器的模块&lt;/p&gt;
 &lt;p&gt;通过 http 模块提供的 http.createServer () 方法，就能方便的把一台普通的电脑，变成一台 Web 服务器，从而对外提供 Web 资源服务。&lt;br&gt;
 在 Node.js 中，不需要使用 IIS、Apache（针对 php） 等第三方 web 服务器软件（普通的电脑常常安装这些），而是基于 Node.js 提供的 http 模块，通过几行简单的代码，就能轻松的手写一个服务器软件，从而对外提供 web 服务&lt;/p&gt;
