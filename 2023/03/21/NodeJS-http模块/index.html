@@ -24,6 +24,8 @@
 <link rel="stylesheet" href="/HTworld.github.io/css/app.css?v=0.2.5">
 
   
+  <meta name="keywords" content="NodeJS" />
+
 
 <link rel="canonical" href="https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/">
 
@@ -100,12 +102,12 @@ HT的小天地</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://i.loli.net/2020/10/30/HKyzSd7NI3mlBpt.jpg"></li>
-          <li class="item" data-background-image="https://i.loli.net/2020/10/30/rjdhcSgEN8COBPA.jpg"></li>
-          <li class="item" data-background-image="https://i.loli.net/2020/10/30/Z5W6r2BSoiThHG1.jpg"></li>
           <li class="item" data-background-image="https://i.loli.net/2020/10/30/Y1CBXqgeokEs457.jpg"></li>
+          <li class="item" data-background-image="https://i.loli.net/2020/10/30/HKyzSd7NI3mlBpt.jpg"></li>
           <li class="item" data-background-image="https://ts1.cn.mm.bing.net/th/id/R-C.ac4aa76ce00abab00967006a13da7ff1?rik=zddMsJvV9Z0Eag&riu=http%3a%2f%2fpic.baike.soso.com%2fugc%2fbaikepic2%2f26762%2f20170204223956-1232796808.jpg%2f0&ehk=J9tlI34xf09tU527m%2bjzI0Hb3gL1SernLuoBpZ7IE9o%3d&risl=&pid=ImgRaw&r=0"></li>
           <li class="item" data-background-image="https://i.loli.net/2020/10/30/qAMYEFXxJcKRsiG.gif"></li>
+          <li class="item" data-background-image="https://i.loli.net/2020/10/30/Z5W6r2BSoiThHG1.jpg"></li>
+          <li class="item" data-background-image="https://i.loli.net/2020/10/30/rjdhcSgEN8COBPA.jpg"></li>
         </ul>
       </div>
     </header>
@@ -199,6 +201,9 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">const http = require(&#x27;http&#x27;)</span><br><span class="line">const server = http.createServer()</span><br><span class="line"></span><br><span class="line">server.on(&#x27;request&#x27;, (req, res) =&gt; &#123;</span><br><span class="line">  // 1. 获取请求的 url 地址</span><br><span class="line">  const url = req.url</span><br><span class="line">  </span><br><span class="line">  // 2. 设置默认的响应内容为 404 Not found</span><br><span class="line">  let content = &#x27;&lt;h1&gt;404 Not found!&lt;/h1&gt;&#x27;</span><br><span class="line">  </span><br><span class="line">  // 3. 判断用户请求的是否为 / 或 /index.html 首页</span><br><span class="line">  // 4. 判断用户请求的是否为 /about.html 关于页面</span><br><span class="line">  if (url === &#x27;/&#x27; || url === &#x27;/index.html&#x27;) &#123;</span><br><span class="line">    content = &#x27;&lt;h1&gt;首页&lt;/h1&gt;&#x27;</span><br><span class="line">  &#125; else if (url === &#x27;/about.html&#x27;) &#123;</span><br><span class="line">    content = &#x27;&lt;h1&gt;关于页面&lt;/h1&gt;&#x27;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  // 5. 设置 Content-Type 响应头，防止中文乱码</span><br><span class="line">  res.setHeader(&#x27;Content-Type&#x27;, &#x27;text/html; charset=utf-8&#x27;)</span><br><span class="line">  </span><br><span class="line">  // 6. 使用 res.end() 把内容响应给客户端</span><br><span class="line">  res.end(content)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">server.listen(80, () =&gt; &#123;</span><br><span class="line">  console.log(&#x27;server running at http://127.0.0.1&#x27;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+      <div class="tags">
+          <a href="/HTworld.github.io/tags/NodeJS/" rel="tag"><i class="ic i-tag"></i> NodeJS</a>
+      </div>
   </div>
 
    <footer>
@@ -209,7 +214,7 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-03-22 00:08:45" itemprop="dateModified" datetime="2023-03-22T00:08:45+08:00">2023-03-22</time>
+    <time title="修改时间：2023-03-22 16:31:39" itemprop="dateModified" datetime="2023-03-22T16:31:39+08:00">2023-03-22</time>
   </span>
 </div>
 
@@ -227,11 +232,6 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
       <div>
         <img data-src="/HTworld.github.io/images/alipay.png" alt="HT Xie 支付宝">
         <p>支付宝</p>
-      </div>
-      
-      <div>
-        <img data-src="/HTworld.github.io/images/paypal.png" alt="HT Xie 贝宝">
-        <p>贝宝</p>
       </div>
   </div>
 </div>
@@ -266,7 +266,7 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
     <div class="item right">
       
 
-  <a href="/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;10&#x2F;30&#x2F;qAMYEFXxJcKRsiG.gif" title="NodeJS之fs">
+  <a href="/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;10&#x2F;30&#x2F;Y1CBXqgeokEs457.jpg" title="NodeJS之fs">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 前端</span>
   <h3>NodeJS之fs</h3>
@@ -314,6 +314,12 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
       <a href="/HTworld.github.io/categories/">
         <span class="count">1</span>
         <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/HTworld.github.io/tags/">
+        <span class="count">2</span>
+        <span class="name">标签</span>
       </a>
     </div>
 </nav>
@@ -365,6 +371,16 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
 <a href="/HTworld.github.io/categories/%E5%89%8D%E7%AB%AF/" title="分类于 前端">前端</a>
 </div>
 
+    <span><a href="/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" title="NodeJS之模块加载机制及npm指令详解">NodeJS之模块加载机制及npm指令详解</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/HTworld.github.io/categories/%E5%89%8D%E7%AB%AF/" title="分类于 前端">前端</a>
+</div>
+
     <span><a href="/HTworld.github.io/2023/03/22/Git-daily/" title="Git祖传宝典">Git祖传宝典</a></span>
   </li>
 
@@ -376,16 +392,6 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
 </div>
 
     <span><a href="/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/" title="NodeJS之http">NodeJS之http</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/HTworld.github.io/categories/%E5%89%8D%E7%AB%AF/" title="分类于 前端">前端</a>
-</div>
-
-    <span><a href="/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/" title="NodeJS之模块加载机制及npm指令详解">NodeJS之模块加载机制及npm指令详解</a></span>
   </li>
 
       

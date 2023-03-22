@@ -1,78 +1,21 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://xhtgit.github.io/HTworld.github.io</id>
-    <title>HT的小天地 • Posts by &#34;前端&#34; category</title>
-    <link href="https://xhtgit.github.io/HTworld.github.io" />
-    <updated>2023-03-21T16:44:22.508Z</updated>
-    <category term="Git" />
-    <category term="NodeJS" />
-    <entry>
-        <id>https://xhtgit.github.io/HTworld.github.io/2023/03/22/Git-daily/</id>
-        <title>Git祖传宝典</title>
-        <link rel="alternate" href="https://xhtgit.github.io/HTworld.github.io/2023/03/22/Git-daily/"/>
-        <content type="html">&lt;h2 id=&#34;日常使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#日常使用&#34;&gt;#&lt;/a&gt; 日常使用&lt;/h2&gt;
-&lt;p&gt;开发新功能时先创建一个新的分支，一般都是开发一个新功能，新建一个新分支&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;用来创建并跳转到新分支&lt;br&gt;
- git checkout -b BranchName&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;查看当前现有的分支&lt;br&gt;
- git branch&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;跳转分支&lt;br&gt;
- git checkout BranchName&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;开发完后提交分支&lt;br&gt;
- git push -u origin BranchName&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;（加了参数 - u 后，以后即可直接用 git push 代替 git push origin master&lt;br&gt;
- 意思就是我们不用在后面加 origin + 要提交的分支名 ，直接 git push 即可&lt;br&gt;
-但是前提是，第一次提交需要加 -u 参数后，后面的提交就直接可以 git push）&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;合并分支&lt;br&gt;
-先要跳转到 master 分支上&lt;br&gt;
- git checkout master&lt;br&gt;
- 然后&lt;br&gt;
- git merge BranchName&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;提交主分支&lt;br&gt;
- git push&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在这些操作之前要&lt;br&gt;
- git add .&lt;br&gt;
-git commit -m&amp;quot;备注&amp;quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;首次拉取代码&lt;br&gt;
- git clone 远程仓库地址&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;每次开发之前要拉取远程仓库最新的代码到本地&lt;br&gt;
- git pull&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;git add .&lt;br&gt;
-git commit -m&amp;quot;备注&amp;quot;&lt;br&gt;
- 之类的指令是对本地仓库操作，拉取、提交时是本地和远程仓库之间的联系&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-        <category term="Git" />
-        <updated>2023-03-21T16:44:22.508Z</updated>
-    </entry>
-    <entry>
-        <id>https://xhtgit.github.io/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</id>
-        <title>NodeJS之模块加载机制及npm指令详解</title>
-        <link rel="alternate" href="https://xhtgit.github.io/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/"/>
-        <content type="html">&lt;h2 id=&#34;模块化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#模块化&#34;&gt;#&lt;/a&gt; 模块化&lt;/h2&gt;
+<rss version="2.0">
+    <channel>
+        <title>HT的小天地 • Posts by &#34;nodejs&#34; tag</title>
+        <link>https://xhtgit.github.io/HTworld.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 21 Mar 2023 23:44:58 +0800</pubDate>
+        <lastBuildDate>Tue, 21 Mar 2023 23:44:58 +0800</lastBuildDate>
+        <category>Git</category>
+        <category>NodeJS</category>
+        <item>
+            <guid isPermalink="true">https://xhtgit.github.io/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</guid>
+            <title>NodeJS之模块加载机制及npm指令详解</title>
+            <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/Node%20JS-%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%8F%8Anpm%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3/</link>
+            <category>NodeJS</category>
+            <pubDate>Tue, 21 Mar 2023 23:44:58 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;模块化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#模块化&#34;&gt;#&lt;/a&gt; 模块化&lt;/h2&gt;
 &lt;p&gt;模块化：是指解决一个复杂问题时，自顶向下逐层把系统划分成若干模块的过程。对于整个系统来说，模块是可组合、分解和更换的单元&lt;br&gt;
 编程领域中的模块化，就是遵守固定的规则，把一个大文件拆成独立并互相依赖的多个小模块。&lt;br&gt;
 把代码进行模块化拆分的好处&lt;/p&gt;
@@ -311,15 +254,15 @@ C:\node_modules\tools
 如果目录里没有 package.json 文件，或者 main 入口不存在或无法解析，则 Node.js 将会试图加载目录下的 index.js 文件
 如果以上两步都失败了，则 Node.js 会在终端打印错误消息，报告模块的缺失：Error: Cannot find module ‘xxx’
 &lt;/code&gt;&lt;/pre&gt;
-</content>
-        <category term="NodeJS" />
-        <updated>2023-03-21T15:44:58.284Z</updated>
-    </entry>
-    <entry>
-        <id>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</id>
-        <title>NodeJS之fs</title>
-        <link rel="alternate" href="https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/"/>
-        <content type="html">&lt;h2 id=&#34;nodejs简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs简介&#34;&gt;#&lt;/a&gt; NodeJs 简介&lt;/h2&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</guid>
+            <title>NodeJS之fs</title>
+            <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-fs%E6%A8%A1%E5%9D%97/</link>
+            <category>NodeJS</category>
+            <pubDate>Tue, 21 Mar 2023 23:44:11 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;nodejs简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs简介&#34;&gt;#&lt;/a&gt; NodeJs 简介&lt;/h2&gt;
 &lt;h4 id=&#34;什么是-nodejs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是-nodejs&#34;&gt;#&lt;/a&gt; 什么是 Node.js&lt;/h4&gt;
 &lt;p&gt;Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境&lt;/p&gt;
 &lt;h4 id=&#34;nodejs-中的-javascript-运行环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs-中的-javascript-运行环境&#34;&gt;#&lt;/a&gt; Node.js 中的 JavaScript 运行环境&lt;/h4&gt;
@@ -392,15 +335,15 @@ C:\node_modules\tools
 &lt;li&gt;返回 返回得到的扩展名字符串&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;const path = require(&amp;#x27;path&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 这是文件的存放路径&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;const fpath = &amp;#x27;/a/b/c/index.html&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;const fext = path.extname(fpath)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(fext)//输出.html&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-        <category term="NodeJS" />
-        <updated>2023-03-21T15:44:11.353Z</updated>
-    </entry>
-    <entry>
-        <id>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/</id>
-        <title>NodeJS之http</title>
-        <link rel="alternate" href="https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/"/>
-        <content type="html">&lt;h2 id=&#34;http模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http模块&#34;&gt;#&lt;/a&gt; http 模块&lt;/h2&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/</guid>
+            <title>NodeJS之http</title>
+            <link>https://xhtgit.github.io/HTworld.github.io/2023/03/21/NodeJS-http%E6%A8%A1%E5%9D%97/</link>
+            <category>NodeJS</category>
+            <pubDate>Tue, 21 Mar 2023 14:03:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;http模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http模块&#34;&gt;#&lt;/a&gt; http 模块&lt;/h2&gt;
 &lt;p&gt;http 模块是 Node.js 官方提供的用来创建 web 服务器的模块&lt;/p&gt;
 &lt;p&gt;通过 http 模块提供的 http.createServer () 方法，就能方便的把一台普通的电脑，变成一台 Web 服务器，从而对外提供 Web 资源服务。&lt;br&gt;
 在 Node.js 中，不需要使用 IIS、Apache（针对 php） 等第三方 web 服务器软件（普通的电脑常常安装这些），而是基于 Node.js 提供的 http 模块，通过几行简单的代码，就能轻松的手写一个服务器软件，从而对外提供 web 服务&lt;/p&gt;
@@ -447,8 +390,7 @@ IP 地址的格式：通常用 “点分十进制” 表示成（a.b.c.d）的�
 &lt;li&gt;使用 res.end () 把内容响应给客户端&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;const http = require(&amp;#x27;http&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;const server = http.createServer()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;server.on(&amp;#x27;request&amp;#x27;, (req, res) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 1. 获取请求的 url 地址&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  const url = req.url&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 2. 设置默认的响应内容为 404 Not found&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  let content = &amp;#x27;&amp;lt;h1&amp;gt;404 Not found!&amp;lt;/h1&amp;gt;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 3. 判断用户请求的是否为 / 或 /index.html 首页&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 4. 判断用户请求的是否为 /about.html 关于页面&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (url === &amp;#x27;/&amp;#x27; || url === &amp;#x27;/index.html&amp;#x27;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    content = &amp;#x27;&amp;lt;h1&amp;gt;首页&amp;lt;/h1&amp;gt;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125; else if (url === &amp;#x27;/about.html&amp;#x27;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    content = &amp;#x27;&amp;lt;h1&amp;gt;关于页面&amp;lt;/h1&amp;gt;&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 5. 设置 Content-Type 响应头，防止中文乱码&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  res.setHeader(&amp;#x27;Content-Type&amp;#x27;, &amp;#x27;text/html; charset=utf-8&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 6. 使用 res.end() 把内容响应给客户端&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  res.end(content)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;server.listen(80, () =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  console.log(&amp;#x27;server running at http://127.0.0.1&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-        <category term="NodeJS" />
-        <updated>2023-03-21T06:03:09.258Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>

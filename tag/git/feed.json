@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "HT的小天地 • All posts by \"git\" tag",
+    "description": "",
+    "home_page_url": "https://xhtgit.github.io/HTworld.github.io",
+    "items": [
+        {
+            "id": "https://xhtgit.github.io/HTworld.github.io/2023/03/22/Git-daily/",
+            "url": "https://xhtgit.github.io/HTworld.github.io/2023/03/22/Git-daily/",
+            "title": "Git祖传宝典",
+            "date_published": "2023-03-21T16:44:22.508Z",
+            "content_html": "<h2 id=\"日常使用\"><a class=\"markdownIt-Anchor\" href=\"#日常使用\">#</a> 日常使用</h2>\n<p>开发新功能时先创建一个新的分支，一般都是开发一个新功能，新建一个新分支</p>\n<ol>\n<li>\n<p>用来创建并跳转到新分支<br>\n git checkout -b BranchName</p>\n</li>\n<li>\n<p>查看当前现有的分支<br>\n git branch</p>\n</li>\n<li>\n<p>跳转分支<br>\n git checkout BranchName</p>\n</li>\n<li>\n<p>开发完后提交分支<br>\n git push -u origin BranchName</p>\n</li>\n</ol>\n<p>（加了参数 - u 后，以后即可直接用 git push 代替 git push origin master<br>\n 意思就是我们不用在后面加 origin + 要提交的分支名 ，直接 git push 即可<br>\n但是前提是，第一次提交需要加 -u 参数后，后面的提交就直接可以 git push）</p>\n<ol start=\"5\">\n<li>\n<p>合并分支<br>\n先要跳转到 master 分支上<br>\n git checkout master<br>\n 然后<br>\n git merge BranchName</p>\n</li>\n<li>\n<p>提交主分支<br>\n git push</p>\n</li>\n<li>\n<p>在这些操作之前要<br>\n git add .<br>\ngit commit -m&quot;备注&quot;</p>\n</li>\n<li>\n<p>首次拉取代码<br>\n git clone 远程仓库地址</p>\n</li>\n<li>\n<p>每次开发之前要拉取远程仓库最新的代码到本地<br>\n git pull</p>\n</li>\n<li>\n<p>git add .<br>\ngit commit -m&quot;备注&quot;<br>\n 之类的指令是对本地仓库操作，拉取、提交时是本地和远程仓库之间的联系</p>\n</li>\n</ol>\n",
+            "tags": [
+                "Git"
+            ]
+        }
+    ]
+}
