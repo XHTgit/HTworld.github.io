@@ -3,10 +3,67 @@
     <id>https://xhtgit.github.io/HTworld.github.io</id>
     <title>HT知识星球 • Posts by &#34;前端&#34; category</title>
     <link href="https://xhtgit.github.io/HTworld.github.io" />
-    <updated>2023-04-13T11:40:21.214Z</updated>
+    <updated>2023-04-14T02:08:43.402Z</updated>
     <category term="Git" />
     <category term="NodeJS" />
     <category term="web开发安全" />
+    <category term="博客搭建" />
+    <entry>
+        <id>https://xhtgit.github.io/HTworld.github.io/2023/04/14/Hexo+GitHub%20Pages%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E7%9F%A5%E8%AF%86%E4%B8%96%E7%95%8C/</id>
+        <title>Hexo+GitHub Pages个人博客搭建-打造你的知识世界</title>
+        <link rel="alternate" href="https://xhtgit.github.io/HTworld.github.io/2023/04/14/Hexo+GitHub%20Pages%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E7%9F%A5%E8%AF%86%E4%B8%96%E7%95%8C/"/>
+        <content type="html">&lt;h3 id=&#34;介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 介绍&lt;/h3&gt;
+&lt;h5 id=&#34;github-pages&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github-pages&#34;&gt;#&lt;/a&gt; GitHub Pages&lt;/h5&gt;
+&lt;p&gt;GitHub Pages 是一个静态网站托管服务。&lt;br&gt;
+GitHub Pages 是设计用来托管你的个人页面，组织页面，或者 Github 仓库的项目页面。&lt;/p&gt;
+&lt;h5 id=&#34;hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo&#34;&gt;#&lt;/a&gt; Hexo&lt;/h5&gt;
+&lt;p&gt;Hexo 是一款基于 Node.js 的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在 GitHub 和 Coding 上，是搭建博客的首选框架。大家可以进入&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuLw==&#34;&gt; hexo 官网&lt;/span&gt;进行详细查看，因为 Hexo 的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。&lt;/p&gt;
+&lt;p&gt;框架文档地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuLw==&#34;&gt;Hexo&lt;/span&gt;\&lt;/p&gt;
+&lt;p&gt;我的博客地址：&lt;a href=&#34;https://xhtgit.github.io/HTworld.github.io/&#34;&gt;HT 知识星球 (xhtgit.github.io)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装环境&#34;&gt;#&lt;/a&gt; 安装环境&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt; 安装NodeJS 和 Git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;首先确定自己是否已经安装 nodejs 和 git&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;node -v
+npm -v
+git -v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/738657eb44754334a75298a9fb203012~tplv-k3u1fbpfcp-watermark.image?&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 如果都显示版本的话则表明安装成功&lt;/p&gt;
+&lt;h3 id=&#34;安装hexo框架&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装hexo框架&#34;&gt;#&lt;/a&gt; 安装 Hexo 框架&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;//安装框架&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//初始化项目&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo init &amp;lt;文件名&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//启动服务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo server&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;一键部署到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一键部署到github&#34;&gt;#&lt;/a&gt; 一键部署到 GitHub&lt;/h3&gt;
+&lt;p&gt;建立名为  &lt;code&gt;&amp;lt;你的 GitHub 用户名&amp;gt;.github.io&lt;/code&gt;  的储存库&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;安装 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLWRlcGxveWVyLWdpdA==&#34;&gt;hexo-deployer-git&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;在  &lt;code&gt;_config.yml&lt;/code&gt;  中添加以下配置（如果配置已经存在，请将其替换为如下）:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!----&gt;
+&lt;pre&gt;&lt;code&gt;deploy:
+  type: git
+  repo: https://github.com/&amp;lt;username&amp;gt;/&amp;lt;project&amp;gt;
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: &amp;lt;branch-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;执行  &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo generate &amp;amp;&amp;amp; hexo deploy&lt;/code&gt; &lt;br&gt;
+ 执行完 hexo d 后会跳出 github 授权的框&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;修改主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改主题&#34;&gt;#&lt;/a&gt; 修改主题&lt;/h3&gt;
+&lt;p&gt;在官方文档的 Themes 里面选择自己喜欢的主题&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1119d47fbf9f47489b362c911d9030a1~tplv-k3u1fbpfcp-watermark.image?&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 点击其名称进入其仓库，复制主题地址，将主题下载到项目 themes 文件夹内，最好阅读主题 Readme.md 下载主题相关插件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone &amp;lt;主题仓库地址&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;修改  &lt;code&gt;_config.yml&lt;/code&gt;  内的  &lt;code&gt;theme&lt;/code&gt;  设定，即可切换主题&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee69504e65904efca760f255e12d81bf~tplv-k3u1fbpfcp-watermark.image?&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 然后通过输入命令 hexo server 本地运行查看效果&lt;br&gt;
+&lt;img data-src=&#34;https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/65ab58eaf44e4a36a9c8aea3a33da8e2~tplv-k3u1fbpfcp-watermark.image?&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 确认无误后，通过上述部署命令再次部署到 GitHub&lt;/p&gt;
+</content>
+        <category term="博客搭建" />
+        <updated>2023-04-14T02:08:43.402Z</updated>
+    </entry>
     <entry>
         <id>https://xhtgit.github.io/HTworld.github.io/2023/04/13/console.log%E4%B9%9F%E4%BC%9A%E5%BC%95%E5%8F%91%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%EF%BC%9F/</id>
         <title>console.log也会引发内存泄漏？</title>
