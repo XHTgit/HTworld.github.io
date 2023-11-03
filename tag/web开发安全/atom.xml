@@ -5,9 +5,8 @@
     <link href="https://xhtgit.github.io/HTworld.github.io" />
     <updated>2023-04-13T11:40:21.214Z</updated>
     <category term="Git" />
-    <category term="NodeJS" />
-    <category term="web开发安全" />
     <category term="博客搭建" />
+    <category term="web开发安全" />
     <entry>
         <id>https://xhtgit.github.io/HTworld.github.io/2023/04/13/console.log%E4%B9%9F%E4%BC%9A%E5%BC%95%E5%8F%91%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%EF%BC%9F/</id>
         <title>console.log也会引发内存泄漏？</title>

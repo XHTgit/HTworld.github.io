@@ -8,9 +8,8 @@
         <pubDate>Thu, 13 Apr 2023 19:40:21 +0800</pubDate>
         <lastBuildDate>Thu, 13 Apr 2023 19:40:21 +0800</lastBuildDate>
         <category>Git</category>
-        <category>NodeJS</category>
-        <category>web开发安全</category>
         <category>博客搭建</category>
+        <category>web开发安全</category>
         <item>
             <guid isPermalink="true">https://xhtgit.github.io/HTworld.github.io/2023/04/13/console.log%E4%B9%9F%E4%BC%9A%E5%BC%95%E5%8F%91%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%EF%BC%9F/</guid>
             <title>console.log也会引发内存泄漏？</title>
